@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 6rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-logo img {
+    height: 2rem;
+    /* width: 9rem; */
+}
+
+#nav-company-name {
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    margin: 0 1.5rem 0 0.5rem;
+}
+
+#hiring-tag {
+    padding: 0.3rem 10px;
+    background-color: #edded5;
+    border-radius: 10rem;
+    font-size: 0.9rem;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    color: black;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    border-bottom: 2px solid black;
+}
+
+#cart-num {
+    padding: 0 0.3rem;
+    border-radius: 50%;
+    background-color: #edded5;
+    text-align: center;
+    display: inline;
+    margin: 2px;
+}
+
+#get-in-touch-btn {
+    border: 1px solid black;
+    padding: 0.8rem 1rem;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+#get-in-touch-btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 90%;
+}
+
+#main-headline {
+    font-size: 6rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#sub-headline {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+#our-service-btn {
+    color: white;
+    background-color: black;
+    padding: 1.1rem 1.5rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.logo-cloud {
+    margin: 4rem 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logos {
+    min-width: 100%;
+    animation-name: logo-cloud-anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-cloud img {
+    height: 7rem;
+}
+
+@keyframes logo-cloud-anime {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service {
+    background-color: #f4f4f5;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.service h1 {
+    font-weight: 400;
+}
+
+.service p {
+    font-size: 1.1rem;
+    color: rgb(94, 92, 92);
+}
+
+.service h2 {
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.our-work {
+    margin: 5rem 0;
+}
+
+.main-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.main-headline h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.main-headline a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.main-headline a:hover {
+    color: white;
+    background-color: black;
+}
+
+.our-work {
+    margin: 5rem 0;
+}
+
+.work-cards {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.work-img {
+    overflow: hidden;
+}
+
+.work img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.work img:hover {
+    transform: scale(1.1);
+}
+
+.work-cards-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-cards-text h2 {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.work-cards-text h4 {
+    font-weight: 200;
+    border: 1px solid black;
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+}
+
+.work-cards-text h4:hover {
+    color: white;
+    background-color: black;
+}
+
+.our-values {
+    min-height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.our-values-cards {
+    margin-top: 4rem;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.value-card {
+    background-color: #f1f6f5;
+    padding: 2.5rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.value-card p {
+    font-size: 0.7rem;
+}
+
+.value-card h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#services-card h4 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+#services-card button {
+    background-color: black;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10rem;
+}
+
+#about-oliv {
+    height: 1rem;
+}
+
+.our-values-last-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19rem;
+    margin: 3rem 0;
+}
+
+.our-values-last-para>.large-text-para {
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+.our-values-last-para .small-text-para {
+    display: flex;
+    gap: 2rem;
+    color: darkslategray;
+}
+
+.our-team {
+    height: 100vh;
+    width: 100%;
+}
+
+.our-team-cards {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.join-our-team,
+.team-member {
+    width: 100%;
+    height: 25rem;
+}
+
+.join-our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    padding: 3rem;
+}
+
+.join-our-team h4 {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.join-our-team h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.join-our-team p {
+    font-size: 0.8rem;
+    color: darkslategray;
+}
+
+.join-our-team button {
+    color: white;
+    background-color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10rem;
+}
+
+.team-member img {
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.our-team-cards .person-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.our-team-cards .person-detail h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.our-team-cards .person-detail p {
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.customer-review-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5rem;
+    padding-left: 30%;
+}
+
+.customer-review {
+    display: flex;
+    gap: 3rem;
+}
+
+.customer-review .review .large-text {
+    font-size: 2rem;
+}
+
+.customer-review .review .small-text {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.contact {
+    margin: 5rem 0;
+    background-color: #f1f6f5;
+    height: 70vh;
+    display: flex;
+    gap: 18rem;
+    position: relative;
+    padding: 4rem;
+}
+
+.contact>div>h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.contact>div>p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+.contact>div>button {
+    padding: 0.8rem 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.contact>div>button>svg {
+    height: 1rem;
+}
+
+.blog-section {
+    width: 100%;
+    height: 80%;
+    margin: 9rem 0;
+}
+
+.blog-cards {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.blog-card img {
+    width: 100%;
+    max-height: 80%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    transition: transform 0.8s ease-in-out;
+}
+
+.blog-card img:hover {
+    transform: translateY(5px);
+}
+
+.blog-card h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.blog-card p {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+footer h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+
+#footer-pages button {
+    background-color: black;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10rem;
+}
+
+footer .company-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .company-logo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+section.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
